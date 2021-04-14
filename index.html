@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+  <div class="inteface">
+
+    <main class="main">
+      <div class="main-container">
+        <h1 class="title">Criador de Descrições</h1>
+      </div>
+
+      <div class="main-container">
+        <fieldset class="fieldset">
+          <p>
+            <label for="tipo-imovel">Tipo do Imóvel</label><select class="select" id="tipo-imovel">
+              <option value=""></option>
+              <option value="Apartamento">Apartamento</option>
+              <option value="Casa Residencial">Casa Residencial</option>
+              <option value="Cobertura">Cobertura</option>
+            </select>
+          </p>
+          <p>
+            <label for="bairro">Bairro </label><select class="select" id="bairro">
+              <!--- options bairros aqui --->
+            </select>
+          </p>
+        </fieldset>
+        <fieldset class="fieldset quartos">
+          <legend class="sub-title">Geral</legend>
+          <p class="p-input"><input placeholder="nº de dormitórios" class="input" id="quartos" type="number" /></p>
+          <p class="p-input"><input placeholder="nº de suítes" class="input" id="suites" type="number" /></p>
+          <p class="p-input"><input placeholder="nº de sacadas" class="input" id="sacadas" type="number" /></p>
+        </fieldset>
+        <fieldset class="fieldset tipo-garagem">
+          <legend class="sub-title">Tipo de Garagem</legend>
+          <p class="p-input">
+            <input placeholder="nº de vagas de garagem" class="input" id="vagas-garagem" type="number" />
+          </p>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="box-duplo" value="box duplo">
+            <label for="box-duplo">Box
+              Duplo</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="box-individual" value="box individual">
+            <label for="box-individual">Box Individual</label>
+          </p>
+        </fieldset>
+      </div>
+
+      <div class="main-container">
+        <fieldset class="fieldset tipo-cozinha">
+          <legend class="sub-title">Tipo de Cozinha</legend>
+          <p class="p-input">
+            <input class="checkbox" id="cozinha" value="cozinha" name="cozinha" type="radio" />
+            <label for="cozinha">Cozinha</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" id="sala-cozinha" value="sala com cozinha" name="cozinha" type="radio" />
+            <label for="sala-cozinha">Sala com cozinha</label>
+          </p>
+        </fieldset>
+        <fieldset class="fieldset tipo-sala">
+          <legend class="sub-title">Tipo de Sala</legend>
+          <p class="p-input">
+            <input class="checkbox" id="sala-estar" value="sala de estar" type="checkbox" />
+            <label for="sala-estar">Sala de estar</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" id="sala-jantar" value="sala de jantar" type="checkbox" />
+            <label for="sala-jantar">Sala de jantar</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" id="sala-dois-ambientes" value="sala dois ambientes" type="checkbox" />
+            <label for="sala-dois-ambientes">Sala dois ambientes</label>
+          </p>
+        </fieldset>
+        <fieldset class="fieldset outros-comodos">
+          <legend class="sub-title">Outros Cômodos</legend>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="banheiro-social" value="banheiro social">
+            <label for="banheiro-social">Banheiro social</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="lavabo" value="lavabo">
+            <label for="lavabo">Lavabo</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="escritorio" value="escritório">
+            <label for="escritorio">Escritório</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="dependencia-empregada" value="dependência de empregada">
+            <label for="dependencia-empregada">Dependência de empregada</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="despensa" value="despensa">
+            <label for="despensa">Despensa</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="patio" value="pátio">
+            <label for="patio">Pátio</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="salao-festas" value="salão de festas">
+            <label for="salao-festas">Salão de festas</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="area-servico" value="área de serviço">
+            <label for="area-servico">Área de serviço</label>
+          </p>
+        </fieldset>
+
+        <fieldset class="fieldset posicao-solar">
+          <legend class="sub-title">Posição solar</legend>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="norte" value="norte">
+            <label for="norte">Norte</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="sul" value="sul">
+            <label for="sul">Sul</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="leste" value="leste">
+            <label for="leste">Leste</label>
+          </p>
+          <p class="p-input">
+            <input class="checkbox" type="checkbox" id="oeste" value="oeste">
+            <label for="oeste">Oeste</label>
+          </p>
+        </fieldset>
+      </div>
+
+      <div class="main-container">
+        <fieldset class="fieldset medidas">
+          <legend class="sub-title">m²</legend>
+          <p class="p-input"><input class="input" placeholder="Área privativa" type="number" id="area-privativa"></p>
+          <p class="p-input"><input class="input" placeholder="Área total" type="number" id="area-total"></p>
+          <p class="p-input"><input class="input" placeholder="Área comum" type="number" id="area-comum"></p>
+          <p class="p-input"><input class="input" placeholder="Área terreno" type="number" id="area-terreno"></p>
+        </fieldset>
+        <fieldset class="fieldset tipo-piso">
+          <legend class="sub-title">Tipo de Piso</legend>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="assoalho" value="assoalho">
+            <label for="assoalho">Assoalho</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="ceramica" value="cerâmica">
+            <label for="ceramica">Cerâmica</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="carpete" value="carpete">
+            <label for="carpete">Carpete</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="decorflex" value="decorflex">
+            <label for="decorflex">Decorflex</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="parquet" value="parquet">
+            <label for="parquet">Parquet</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="laminado" value="laminado">
+            <label for="laminado">Laminado</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="lajota" value="lajota">
+            <label for="lajota">Lajota</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="paviflex" value="paviflex">
+            <label for="paviflex">Paviflex</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="porcelanato" value="porcelanato">
+            <label for="porcelanato">Porcelanato</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="tabuao" value="tabuão">
+            <label for="tabuao">Tabuão</label>
+          </p>
+        </fieldset>
+        <fieldset class="fieldset diferenciais">
+          <legend class="sub-title">Diferenciais</legend>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="box-banheiro" value="box no banheiro">
+            <label for="box-banheiro">Box no banheiro</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="calefacao" value="calefacao">
+            <label for="calefacao">Calefação</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="churrasqueira" value="churrasqueira">
+            <label for="churrasqueira">Churrasqueira</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="espera-agua-quente" value="espera para água quente">
+            <label for="espera-agua-quente">Espera para agua quente</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="espera-split" value="espera para split">
+            <label for="espera-split">Espera para split</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="hid-individual" value="hidrômetro individual">
+            <label for="hid-individual">Hidrômetro individual</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="lareira" value="lareira">
+            <label for="lareira">Lareira</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="rebaixe-gesso" value="rebaixe em gesso">
+            <label for="rebaixe-gesso">Rebaixe em gesso</label>
+          </p>
+        </fieldset>
+        <fieldset class="fieldset detalhes-condominio">
+          <legend class="sub-title">Condomínio</legend>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="academia" value="academia">
+            <label for="academia">Academia</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="alarme" value="alarme">
+            <label for="alarme">Alarme</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="brinquedoteca" value="brinquedoteca">
+            <label for="brinquedoteca">Brinquedoteca</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="cameras" value="câmeras">
+            <label for="cameras">Câmeras</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="cerca-eletrica" value="cerca elétrica">
+            <label for="cerca-eletrica">Cerca elétrica</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="elevador" value="elevador">
+            <label for="elevador">Elevador</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="gas-central" value="gás central">
+            <label for="gas-central">Gás central</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="grades" value="grades">
+            <label for="grades">Grades</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="hall-entrada" value="hall de entrada">
+            <label for="hall-entrada">Hall de entrada</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="jardim" value="jardim">
+            <label for="jardim">Jardim</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="kids-place" value="kid's place">
+            <label for="kids-place">Kid's place</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="muros" value="muros">
+            <label for="muros">Muros</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="portaria-24h" value="portaria 24h">
+            <label for="portaria-24h">Portaria 24h</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="portaria" value="portaria">
+            <label for="portaria">Portaria</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="playground" value="playground">
+            <label for="playground">Playground</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="condominio-patio" value="pátio">
+            <label for="condominio-patio">Pátio</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="porteiro-eletronico" value="porteiro eletrônico">
+            <label for="porteiro-eletronico">Porteiro eletrônico</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="sala-jogos" value="sala de jogos">
+            <label for="sala-jogos">Sala de jogos</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="condominio-salao-festas" value="salão festas">
+            <label for="condominio-salao-festas">Salão de festas</label>
+          </p>
+          <p class="p-input">
+            <input type="checkbox" class="checkbox" id="sauna" value="sauna">
+            <label for="sauna">Sauna</label>
+          </p>
+
+        </fieldset>
+      </div>
+
+      <div class="main-container">
+        <button onclick="pegaDados()" class="button center">
+          Gerar descrição
+        </button>
+
+      </div>
+
+      <div class="main-container">
+        <p id="bio"></p>
+      </div>
+
+    </main>
+
+  </div>
+  <script src="./bairros.js"></script>
+  <script src="./utils.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
